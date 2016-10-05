@@ -43,16 +43,19 @@ button {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  min-height: 40px; }
   .clear-nav .logo {
     height: 3vw;
     width: 10vw;
     background-image: url("img/logo-white.png");
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    min-width: 300px;
+    min-height: 40px; }
   .clear-nav nav {
     display: flex; }
     .clear-nav nav p {
-      padding: 0 3vw;
+      padding: 0 2vw;
       font-size: 16px; }
 
 .white-nav {
@@ -68,5 +71,20 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+
+.half-width {
+  width: 50%; }
+
+@media screen and (max-width: 824px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 17vw; }
+
+  .half-width {
+    width: 80%; }
+
+  .flex-col {
+    flex: none; } }
 
 /*# sourceMappingURL=style.css.map */

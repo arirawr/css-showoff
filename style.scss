@@ -52,19 +52,22 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  min-height: 40px;
 
   .logo {
     height: 3vw;
     width: 10vw;
     background-image: url('img/logo-white.png');
     background-repeat: no-repeat;
+    min-width: 300px;
+    min-height: 40px;
   }
 
   nav {
     display: flex;
 
     p {
-      padding: 0 3vw;
+      padding: 0 2vw;
       font-size: 16px;
     }
   }
@@ -86,4 +89,24 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.half-width {
+  width: 50%;
+}
+
+@media screen and (max-width: 824px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 17vw;
+  }
+
+  .half-width {
+    width: 80%;
+  }
+
+  .flex-col {
+    flex: none;
+  }
 }
