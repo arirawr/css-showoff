@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+  font-family: Helvetica Neue;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  background-image: url('img/space_blur.jpg');
+  background-size: cover;
+  color: white;
+  display: flex;
+  padding: 8vw 4vw 2vw 4vw;
+}
+
+.clear-nav {
+  color: white;
+  background: transparent;
+  position: fixed;
+  padding: 1vw 12vw;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    height: 3vw;
+    width: 10vw;
+    background-image: url('img/logo-white.png');
+    background-repeat: no-repeat;
+  }
+
+  nav {
+    display: flex;
+
+    p {
+      padding: 0 3vw;
+      font-size: 16px;
+    }
+  }
+}
+
+.white-nav {
+  background: white;
+  color: black;
+  border-bottom: 1px #ddd solid;
+
+  .logo {
+    background-image: url('img/logo.png');
+  }
+}
